@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starblast ad-overlay removal</title>
+    <style>
+        @import url(https://fonts.googleapis.com/css?family=Syncopate);
+
+        html {
+            font-family: 'Syncopate', sans-serif;
+        }
+
+        body {
+            margin: 0;
+            box-sizing: content-box;
+            padding: 7px;
+            background: #191919;
+        }
+
+        .main {
+            box-sizing: border-box;
+            padding: 18px;
+            width: 290px;
+            height: max-content;
+            background: #191919;
+            border: 2px solid rgb(61, 255, 164);
+            border-top-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+            display: grid;
+            place-items: center;
+        }
+
+        p {
+          font-size: 10px;
+          margin: 0;
+          text-align: center;
+          color: white;
+          font-family: 'Syncopate', sans-serif;
+          font-weight: bolder;
+        }
+
+        #removalCounter {
+          font-size: 28px;
+          color: transparent;
+          background-image: radial-gradient(circle at bottom center, #7dffc2 5px, rgb(0, 139, 74));
+          background-clip: text;
+          -moz-background-clip: text;
+          -webkit-background-clip: text;
+        }
+
+        .head {
+          height: max-content;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          width: 100%;
+          margin-bottom: 25px;
+        }
+
+        table {
+          margin-top: 10px;
+          width: 100%;
+        }
+
+        .footer {
+          margin-top: 15px;
+        }
+
+        section {
+          display: flex;
+          width: 100%;
+          justify-content: center;
+          font-family: 'Syncopate', sans-serif;
+          color: gray;
+          font-size: 8px;
+          font-weight: bolder;
+        }
+    </style>
+</head>
+    <body>
+        <div class="main">
+            <div class="head">
+              <img src="https://i.ibb.co/m0L74Kc/icon128.png" style="height:30px;margin-right:5px;">
+              <div style="width:100%">
+                <p style="text-align: left;"><span style="color:rgb(61, 255, 164);">STARBLAST</span><br></p>
+                <div style="width:100%;justify-content: space-between;display:flex;flex:1">
+                  <p>AD BUG REMOVER</p>
+                  <p style="font-style: italic; color: gray">v1.0.0</p>
+                </div>
+              </div>
+            </div>
+            <p>BUGGED OVERLAYS REMOVED SO FAR: 
+              <br><span id="removalCounter">0</span>
+            </p>
+            <div class="footer">
+              <section>
+                Made by:&nbsp;<span style="color:white;">HALCYON</span>
+              </section>
+              <section>
+                Report bugs to my discord:&nbsp;<span style="color:white;">h.alcyon</span>
+              </section>
+            </div>
+        </div>
+        <script src="popup.js"></script>
+    </body>
+</html>

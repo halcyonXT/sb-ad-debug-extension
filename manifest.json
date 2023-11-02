@@ -1,0 +1,32 @@
+{
+    "name": "Starblast Ad-Overlay Removal",
+    "version": "1.0.0",
+    "description": "Remove the ad-overlay bug",
+    "manifest_version": 3,
+    "author": "Halcyon",
+    "action":{
+        "default_popup": "index.html",
+        "default_title": "Starblast ad-overlay removal",
+        "default_icon": {
+            "16": "images/icon16.png",
+            "48": "images/icon48.png",
+            "128": "images/icon128.png"
+        }
+    },
+    "permissions": [
+        "tabs",
+        "activeTab",
+        "https://starblast.io/*"
+    ],
+    "content_scripts": [
+        {
+            "matches": ["https://starblast.io/*"],
+            "js": ["content.js"]
+        }
+    ],
+    "icons": {
+        "16": "images/icon16.png",
+        "48": "images/icon48.png",
+        "128": "images/icon128.png"
+    }
+}
